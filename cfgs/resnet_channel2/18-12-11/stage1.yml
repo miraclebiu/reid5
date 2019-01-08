@@ -1,0 +1,47 @@
+dataset: market1501
+sample_instance: True
+num_instances: 8
+batch_size: 160
+height: 256
+width: 128
+model: resnet_channel2
+depth: 50
+num_features: 512
+dropout: 0.0
+
+loss_type: multi
+
+
+theta: 0.1
+sac: True
+
+
+gamma: 1.0
+xen: False
+
+
+
+
+alpha: 1.0
+trip: True
+rank_loss: False
+margin1: 0.5
+
+
+
+beta: 1.0
+trip_weight: False
+trip_com: False
+quad: False
+
+margin2: 0.2
+
+weight_margin: 2.0
+trip_weight_pos_radius_divide: 2.0
+trip_weight_neg_radius_divide: 2.0
+
+
+optimizer: sgd
+lr: 0.0005
+resume: True
+frozen_sublayer: False
